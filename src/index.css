@@ -21,7 +21,7 @@ body {
 .toastBody{
   font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
   color: #f5f7f7;
-  font-size: 0.875rem !important;
+  font-size: 0.875rem;
 }
 
 /* webkit scrool-bar */
@@ -43,9 +43,9 @@ body {
 /* add scroll animation */
 
 .animationTimeline {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  animation: appear ease-in-out !important;
+  animation-timeline: view() !important;
+  animation-range: entry 0% cover 30% !important;
 }
 
 @keyframes appear {
