@@ -1,12 +1,17 @@
 import { Element } from "react-scroll";
 import { useColorContext } from "../../ContextApiFolder/ColorContext";
+import { motion } from "framer-motion";
 
 const Project = () => {
   const { colorCode } = useColorContext();
   return (
     <>
       <Element name="project">
-        <section className="vieworhideonscroll mt-[3rem] w-[100%]">
+        <motion.section
+          initial={{ opacity: 0, scale: 0.7 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0 }}
+          className="vieworhideonscroll mt-[3rem] w-[100%]">
           {/* project heading */}
           <div
             className="grid place-content-center"
@@ -255,7 +260,7 @@ const Project = () => {
               style={{ "--colorCode": colorCode }}
               className="md:w-[2px] bg-[var(--colorCode)] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
           </div>
-        </section>
+        </motion.section>
       </Element>
     </>
   );

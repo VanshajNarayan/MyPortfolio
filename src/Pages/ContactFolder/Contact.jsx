@@ -4,6 +4,7 @@ import { useColorContext } from "../../ContextApiFolder/ColorContext";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -37,9 +38,14 @@ const Contact = () => {
 
   return (
     <>
-      <section
-        className="mb-[6rem] vieworhideonscroll"
-        style={{ "--colorCode": colorCode }}>
+      <motion.section
+        initial={{ opacity: 0, scale: 0.7 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0 }}
+        className="mb-[6rem]"
+        style={{
+          "--colorCode": colorCode,
+        }}>
         {/* heading */}
         <div className="grid place-content-center">
           <h2 className="border-[2px] border-[var(--colorCode)] px-[30px] w-[fit-content] text-[var(--colorCode)] text-[40px] font-[600] tracking-[0.18rem] font-[playfair]">
@@ -119,7 +125,7 @@ const Contact = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };
