@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <>
       <Element name="project">
-        <section className="animationTimeline mt-[3rem] w-[100%]">
+        <section className="vieworhideonscroll mt-[3rem] w-[100%]">
           {/* project heading */}
           <div
             className="grid place-content-center"
@@ -61,7 +61,7 @@ const Project = () => {
 
               {/* text part */}
 
-              <div className="mt-[2rem] w-[100%] pl-[0.7rem]">
+              <div className="mt-[2rem] w-[100%] p-[1.2rem]">
                 <h3 className="text-[#7b48dc] text-[40px] font-[playfair] font-[600] tracking-[0.1rem]">
                   Ecommerce
                 </h3>
@@ -98,7 +98,7 @@ const Project = () => {
             {/* project 2 */}
             <div className="relative flex flex-col-reverse md:flex-row sm:gap-[1em] md:gap-[5em] sm items-center mb-[2rem] max-w-[1600px] w-[100%] m-auto">
               {/* text part */}
-              <div className="mt-[2rem] w-[100%] pl-[0.7rem]">
+              <div className="mt-[2rem] w-[100%] p-[1.2rem]">
                 <h3 className="text-[#c25555] text-[40px] font-[playfair] font-[600] tracking-[0.07rem]">
                   Music
                 </h3>
@@ -214,7 +214,7 @@ const Project = () => {
               </div>
 
               {/* text part */}
-              <div className="mt-[2rem] w-[100%] pl-[0.7rem]">
+              <div className="mt-[2rem] w-[100%] p-[1.2rem]">
                 <h3 className="text-[#3bb1c8] text-[40px] font-[playfair] font-[600] tracking-[0.07rem]">
                   News
                 </h3>

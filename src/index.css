@@ -10,8 +10,8 @@
 
 /* add scroll animation */
 
-.animationTimeline {
-  animation: appear ease-in-out !important;
+.vieworhideonscroll {
+  animation: appear ease-in-out 1s !important;
   animation-timeline: view() !important;
   animation-range: entry 0% cover 30% !important;
 }
@@ -19,13 +19,15 @@
 @keyframes appear {
   from {
     opacity: 0;
-    scale: 0.5;
+    transform: scale(0.5);
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
+
+/* animation for blob */
 
 .blob:nth-child(3) {
   @apply blur-[100px];

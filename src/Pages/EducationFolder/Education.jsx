@@ -4,7 +4,7 @@ const Education = () => {
   const { colorCode } = useColorContext();
   return (
     <>
-      <section className="animationTimeline">
+      <section className="vieworhideonscroll">
         {/* heading */}
         <div
           className="grid place-content-center"

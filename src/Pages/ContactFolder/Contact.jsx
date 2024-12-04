@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <>
       <section
-        className="mb-[6rem] animationTimeline"
+        className="mb-[6rem] vieworhideonscroll"
         style={{ "--colorCode": colorCode }}>
         {/* heading */}
         <div className="grid place-content-center">
